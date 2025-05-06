@@ -12,7 +12,15 @@ router.post('/',async (req,res) => {
     
     }
     catch (err){
-        res.status(400).json({message:err.m})
+        res.status(400).json({message:err.message})
     }
 
 })
+
+//GET EVENT
+router.get('/',async (req,res) => {
+    const events=await Event.find()
+    res.json(events)
+})
+
+router.get('/:id',async (req,res) =>{})
