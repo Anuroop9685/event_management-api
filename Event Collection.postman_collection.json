@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "5e6a795f-252a-4215-b068-fc43c75b2229",
+		"name": "Event Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20012071"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\n    \"title\": \"Workshop\",\n    \"description\": \"JavaScript hands-on\",\n    \"date\": \"2025-06-05\"\n  }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/events",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\n    \"title\": \"Course\",\n    \"description\": \"JavaScript practical\",\n    \"date\": \"2025-06-08\"\n  }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/events/6819cd44ed4960b24dec8069",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events",
+						"6819cd44ed4960b24dec8069"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/events",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n  {\n    \"title\": \"Work\",\n    \"description\": \"JavaScript \",\n    \"date\": \"2025-07-05\"\n  }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/events/6819ce60ed4960b24dec8073",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events",
+						"6819ce60ed4960b24dec8073"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

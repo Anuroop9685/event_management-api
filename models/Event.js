@@ -1,4 +1,4 @@
-const mongoose =require('mongoose')
+const mongoose = require('mongoose')
 
 const eventSchema = new mongoose.Schema({     //Defining the schema
     title : {                              //Tile for the event

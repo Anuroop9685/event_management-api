@@ -3,12 +3,9 @@ require('dotenv').config()
 
 const express = require('express')     // Imported necessary modules
 const app = express()
-const cors = require('cors');
 
 
 const mongoose = require('mongoose')   // Mongoose for MongoDB interaction
-
-app.use(cors()); 
 app.use(express.json())
 
 app.get('/', (req, res) => {           // Fixed parameter order
@@ -24,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Calling routes
 const eventRoutes = require('./routes/event')
-app.use('/events', eventRoutes)
+app.use("/events", eventRoutes)
 
 app.listen(PORT, () => {
     console.log(`Server running on PORT ${PORT}`)
