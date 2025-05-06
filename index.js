@@ -1,7 +1,16 @@
 const express = require('express')
-const app=express()
+const app=express() 
+require('dotenv').config()
+
 app.use(express.json())
 
-app.listen(3000,() =>{
-    console.log('Server running on PORT 3000')
+app.get('/',(res,req) => {
+    res.send('Event Management API is running....')
+})
+
+const PORT= process.env.PORT || 5000
+
+
+app.listen(PORT,() =>{
+    console.log(`Server running on PORT ${PO}`)
 })
