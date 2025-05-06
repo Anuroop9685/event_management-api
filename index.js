@@ -12,5 +12,12 @@ const PORT= process.env.PORT || 5000
 
 
 app.listen(PORT,() =>{
-    console.log(`Server running on PORT ${PO}`)
+    console.log(`Server running on PORT ${PORT}`)
 })
+
+// Adding mongodb connection
+MONGO_URI 
+
+const mongoose= require('mongoose')
+
+mongoose.connect(process.env.MONGO_URI)
